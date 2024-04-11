@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".activities.ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="35dp"
+            android:layout_height="33dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/back_arrow"
+            android:backgroundTint="@color/colorWhite"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textAllCaps="true"
+            android:textSize="17sp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="50dp"
+                android:paddingBottom="15dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/profile_icon"
+                    android:scaleType="centerCrop"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/colorWhite"/>
+
+                <TextView
+                    android:id="@+id/txt_userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="Demo Name"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Number"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorDarkGray"/>
+
+                <EditText
+                    android:id="@+id/user_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="10"
+                    android:layout_marginTop="3dp"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14sp"
+                    android:text="975574546"
+                    android:inputType="number"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Group"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorDarkGray"/>
+
+                <EditText
+                    android:id="@+id/user_bloodGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14sp"
+                    android:text="+"
+                    android:inputType="text"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bank Name"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorDarkGray"/>
+
+                <EditText
+                    android:id="@+id/user_bankName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:inputType="textMultiLine"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bank Account Number"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorDarkGray"/>
+
+                <EditText
+                    android:id="@+id/user_bankAccountNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:inputType="textMultiLine"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Branch Name"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorDarkGray"/>
+
+                <EditText
+                    android:id="@+id/user_branchName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:inputType="textMultiLine"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="IFSC Code"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorDarkGray"/>
+
+                <EditText
+                    android:id="@+id/user_ifscCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:inputType="textMultiLine"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Company Name"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorDarkGray"/>
+
+                <EditText
+                    android:id="@+id/user_companyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:inputType="text"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Company Address"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorDarkGray"/>
+
+                <EditText
+                    android:id="@+id/user_companyAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:inputType="text"
+                    android:editable="false"
+                    />
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Creation Date"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:textColor="@color/colorDarkGray"/>-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/user_creationDate"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="3dp"-->
+<!--                    android:focusableInTouchMode="false"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:text=""-->
+<!--                    android:inputType="text"-->
+<!--                    android:editable="false"-->
+<!--                    />-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Designation"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorDarkGray"
+                    android:editable="false"
+                    />
+
+                <EditText
+                    android:id="@+id/user_designation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14sp"
+                    android:text="UI Designer"
+                    android:inputType="text"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Birth"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorDarkGray"/>
+
+                <EditText
+                    android:id="@+id/user_DOB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14sp"
+                    android:text="000000"
+                    android:inputType="number"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email Id"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorDarkGray"/>
+
+                <EditText
+                    android:id="@+id/user_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14sp"
+                    android:text="application.ai@gmail.com"
+                    android:inputType="textEmailAddress"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Employee Code"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorDarkGray"/>
+
+                <EditText
+                    android:id="@+id/user_employeeCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:inputType="text"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Experience"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorDarkGray"/>
+
+                <EditText
+                    android:id="@+id/user_experience"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:inputType="text"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Father's Name"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorDarkGray"/>
+
+                <EditText
+                    android:id="@+id/user_fatherName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:inputType="text"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mother's Name"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorDarkGray"/>
+
+                <EditText
+                    android:id="@+id/user_motherName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:inputType="text"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorDarkGray"/>
+
+                <EditText
+                    android:id="@+id/user_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:inputType="text"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Joining Date"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorDarkGray"/>
+
+                <EditText
+                    android:id="@+id/user_joiningDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:inputType="text"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Local Address"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorDarkGray"
+                    />
+
+                <EditText
+                    android:id="@+id/user_localAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:inputType="text"
+                    android:editable="false"
+                    />
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Modification Date"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:textColor="@color/colorDarkGray"/>-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/user_modificationDate"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="3dp"-->
+<!--                    android:focusableInTouchMode="false"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:text=""-->
+<!--                    android:inputType="text"-->
+<!--                    android:editable="false"-->
+<!--                    />-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Notice Period"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorDarkGray"/>
+
+                <EditText
+                    android:id="@+id/user_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:inputType="text"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Passport"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorDarkGray"/>
+
+                <EditText
+                    android:id="@+id/user_passport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:inputType="text"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorDarkGray"/>
+
+                <EditText
+                    android:id="@+id/user_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:inputType="text"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Permanent Address"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorDarkGray"/>
+
+                <EditText
+                    android:id="@+id/user_permanentAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:inputType="text"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Salary"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorDarkGray"/>
+
+                <EditText
+                    android:id="@+id/user_salary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:inputType="number"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorDarkGray"/>
+
+                <EditText
+                    android:id="@+id/user_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:inputType="text"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorDarkGray"/>
+
+                <EditText
+                    android:id="@+id/user_userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:inputType="text"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Guardian Number"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorDarkGray"/>
+
+                <EditText
+                    android:id="@+id/user_guardianNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:inputType="text"
+                    android:editable="false"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--android:background="@color/colorWhite"-->
+    <!--tools:context=".activities.ProfileActivity">-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:background="@color/colorPrimary">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/img_back"-->
+            <!--android:layout_width="35dp"-->
+            <!--android:layout_height="33dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginStart="10dp"-->
+            <!--android:src="@drawable/back_arrow"-->
+            <!--android:backgroundTint="@color/colorWhite"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Profile"-->
+            <!--android:textAllCaps="true"-->
+            <!--android:textSize="17sp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:textAlignment="center"/>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:paddingTop="50dp"-->
+        <!--android:paddingBottom="15dp"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:gravity="center">-->
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+            <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+            <!--android:id="@+id/profile_image"-->
+            <!--android:layout_width="110dp"-->
+            <!--android:layout_height="110dp"-->
+            <!--android:src="@drawable/profile_icon"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--app:civ_border_width="2dp"-->
+            <!--app:civ_border_color="@color/colorWhite"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:textSize="15sp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:text="Demo Name"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="25dp"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Mobile Number"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textColor="@color/colorDarkGray"/>-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/user_mobile"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:maxLength="10"-->
+            <!--android:layout_marginTop="3dp"-->
+            <!--android:focusableInTouchMode="false"-->
+            <!--android:textSize="14sp"-->
+            <!--android:text="975574546"-->
+            <!--android:inputType="number"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Email Id"-->
+            <!--android:textSize="14sp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:textColor="@color/colorDarkGray"/>-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/user_email"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="3dp"-->
+            <!--android:focusableInTouchMode="false"-->
+            <!--android:textSize="14sp"-->
+            <!--android:text="application.ai@gmail.com"-->
+            <!--android:inputType="textEmailAddress"/>-->
+
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Designation"-->
+            <!--android:textSize="14sp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:textColor="@color/colorDarkGray"/>-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/user_designation"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="3dp"-->
+            <!--android:focusableInTouchMode="false"-->
+            <!--android:textSize="14sp"-->
+            <!--android:text="UI Designer"-->
+            <!--android:inputType="text"/>-->
+
+
+    <!--</LinearLayout>-->
+
+
+
+
+<!--</LinearLayout>-->

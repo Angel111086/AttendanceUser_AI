@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".activities.DetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:elevation="2dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="35dp"
+            android:layout_height="33dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/back_arrow"
+            android:backgroundTint="@color/colorWhite"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:textAllCaps="true"
+            android:textSize="17sp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center"/>
+
+    </RelativeLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="15dp"
+           android:layout_marginTop="80dp"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="16sp"
+               android:textColor="@color/colorDarkGray"
+               android:text="Company Name"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="16sp"
+               android:layout_marginTop="5dp"
+               android:textColor="#808080"
+               android:text="Demo Company Limited"
+               android:id="@+id/company_name"
+               />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="16sp"
+               android:layout_marginTop="20dp"
+               android:textColor="@color/colorDarkGray"
+               android:text="Company Address"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="16sp"
+               android:layout_marginTop="5dp"
+               android:textColor="#808080"
+               android:id="@+id/company_address"
+               android:text="123 BK, Demo City, Demo Street, Indore"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="16sp"
+               android:layout_marginTop="20dp"
+               android:textColor="@color/colorDarkGray"
+               android:text="Date / Time"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="16sp"
+               android:layout_marginTop="5dp"
+               android:textColor="#808080"
+               android:id="@+id/user_dt"
+               android:text="22/08/2019, 12:43 PM"/>
+
+       </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_home"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="HOME"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/btn_colour"/>
+
+
+
+</RelativeLayout>

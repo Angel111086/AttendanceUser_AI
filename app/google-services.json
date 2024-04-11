@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "320382604570",
+    "firebase_url": "https://connektloggerwebv4.firebaseio.com",
+    "project_id": "connektloggerwebv4",
+    "storage_bucket": "connektloggerwebv4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320382604570:android:cb2635803bffe499",
+        "android_client_info": {
+          "package_name": "ai.attendance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "320382604570-k3avm06i9ifq8j57fkiok661hvuti3kn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ai.attendance",
+            "certificate_hash": "9144e6a73e8e8db4e8471a7ce0c5222e75c9d6f1"
+          }
+        },
+        {
+          "client_id": "320382604570-fotbdbc1tj30rbust2r0c77vp2rigkbe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtczl0fJQx9w1RmTd_8M1jUXbwf5KndPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "320382604570-fotbdbc1tj30rbust2r0c77vp2rigkbe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
